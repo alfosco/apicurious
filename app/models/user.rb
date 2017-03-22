@@ -8,4 +8,8 @@ class User < ApplicationRecord
     user.save
     user
   end
+
+  def self.user_info(user)
+    GithubService.new(user).user_info
+  end
 end
