@@ -1,9 +1,9 @@
-class FollowersController < ApplicationController
+class FollowingsController < ApplicationController
   before_action :authorize!
 
   def index
     user = User.find(session[:user_id])
-    @followers = Follower.find_followers(user)
+    @following = Following.find_following(user)
     @star_count = Starred.count(user)
     @follower_count = Follower.count(user)
     @following_count = Following.count(user)
