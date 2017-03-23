@@ -10,4 +10,5 @@ Rails.application.routes.draw do
   get '/stars', to: 'stars#index'
   get '/following', to: 'followings#index'
   get '/organizations', to: 'organizations#index'
+  get '/repositories', to: 'repositories#index'
 end

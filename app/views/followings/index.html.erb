@@ -5,7 +5,7 @@
   <hr>
 
   <% @following.each do |follow| %>
-    <h3><%= follow.login %></h3>
+    <h3><%= link_to follow.login, follow.html_url %></h3>
     <%= image_tag follow.avatar_url, class: "thumbnail" %>
     <br><br>
     <hr>

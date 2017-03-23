@@ -5,7 +5,7 @@
   <hr>
 
   <% @starred.each do |star| %>
-    <h3>Repository Name: <%= star.name %></h3>
+    <h3>Repository Name: <%= link_to star.full_name, star.html_url %></h3>
     <h3>Repository Language: <%= star.language %></h3>
     <hr>
   <% end %>

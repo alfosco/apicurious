@@ -3,9 +3,9 @@
 <div class="list">
   <h1>Followers</h1>
   <hr>
-  
+
   <% @followers.each do |follower| %>
-    <h3><%= follower.login %></h3>
+    <h3><%= link_to follower.login, follower.html_url %></h3>
     <%= image_tag follower.avatar_url, class: "thumbnail" %>
     <br><br>
     <hr>
