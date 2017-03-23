@@ -8,5 +8,6 @@ class FollowersController < ApplicationController
     @follower_count = Follower.count(user)
     @following_count = Following.count(user)
     @organization_count = Organization.count(user)
+    @repository_count = Repository.count(user)
   end
 end

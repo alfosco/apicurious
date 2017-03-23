@@ -1,0 +1,12 @@
+<%= render partial: 'layouts/navbar' %>
+
+<div class="list">
+  <h1>Repositories</h1>
+  <hr>
+
+  <% @repositories.each do |repository| %>
+    <h3><%= link_to repository.name, repository.html_url %></h3>
+    <p><%= repository.language %></p>
+    <hr>
+  <% end %>
+</div>
