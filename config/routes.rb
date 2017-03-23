@@ -9,4 +9,5 @@ Rails.application.routes.draw do
   get '/followers', to: 'followers#index'
   get '/stars', to: 'stars#index'
   get '/following', to: 'followings#index'
+  get '/organizations', to: 'organizations#index'
 end

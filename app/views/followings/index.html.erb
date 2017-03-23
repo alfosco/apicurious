@@ -2,11 +2,12 @@
 
 <div class="list">
   <h1>Following</h1>
+  <hr>
 
   <% @following.each do |follow| %>
     <h3><%= follow.login %></h3>
-    <br>
     <%= image_tag follow.avatar_url, class: "thumbnail" %>
     <br><br>
+    <hr>
   <% end %>
 </div>

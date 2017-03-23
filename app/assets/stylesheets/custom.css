@@ -11,6 +11,16 @@ h3 {
   color: navy;
 }
 
+p {
+  color: navy;
+}
+
+hr {
+  width: 20%;
+  border-color: lime;
+  background-color: lime;
+}
+
 /* divs */
 .home {
   width: 100%;
