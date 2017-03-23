@@ -2,10 +2,11 @@
 
 <div class="list">
   <h1>Starred Repositories</h1>
+  <hr>
 
   <% @starred.each do |star| %>
     <h3>Repository Name: <%= star.name %></h3>
     <h3>Repository Language: <%= star.language %></h3>
-    <br><br>
+    <hr>
   <% end %>
 </div>

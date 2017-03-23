@@ -1,0 +1,15 @@
+<%= render partial: 'layouts/navbar' %>
+
+<div class="list">
+  <h1>Organizations</h1>
+  <hr>
+
+  <% @organizations.each do |organization| %>
+    <h3><%= organization.login %></h3>
+    <%= image_tag organization.avatar_url, class: "thumbnail" %>
+    <br>
+    <p><%= organization.description %></p>
+    <br>
+    <hr>
+  <% end %>
+</div>

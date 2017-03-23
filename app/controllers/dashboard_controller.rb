@@ -7,5 +7,6 @@ class DashboardController < ApplicationController
     @star_count = Starred.count(user)
     @follower_count = Follower.count(user)
     @following_count = Following.count(user)
+    @organization_count = Organization.count(user)
   end
 end
