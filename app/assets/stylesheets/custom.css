@@ -30,18 +30,7 @@ h3 {
   color: navy;
 }
 
-.follower_list {
-  width: 100%;
-  background-color: white;
-  position:relative;
-  margin:0 auto;
-  clear:left;
-  height:auto;
-  z-index: 0;
-  text-align:center;
-}
-
-.starred_repo_list {
+.list {
   width: 100%;
   background-color: white;
   position:relative;
