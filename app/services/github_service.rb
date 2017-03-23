@@ -3,19 +3,20 @@ class GithubService
 
   def initialize(user)
     @user = user
-    @connection = Faraday.new("https://api.github.com/users")
-  end
-
-  def client_id_and_secret
-    "client_id=#{Figaro.env.github_client_id}&client_secret=#{Figaro.env.github_client_secret}"
+    @connection = Faraday.new("https://api.github.com/")
+    @connection.headers[:Authorization] = "token #{@user['token']}"
   end
 
   def user_info
-    parse(connection.get("#{user.username}?client_id_and_secret"))
+    parse(connection.get("users/#{user.username}"))
   end
 
   def starred_repos
-    parse(connection.get("#{user.username}/starred?client_id_and_secret"))
+    parse(connection.get("users/#{user.username}/starred"))
+  end
+
+  def followers
+    parse(connection.get("users/#{user.username}/followers"))
   end
 
   private

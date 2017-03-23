@@ -1,4 +1,15 @@
 /* headers */
+h1 {
+  color: navy;
+}
+
+h2 {
+  color: navy;
+}
+
+h3 {
+  color: navy;
+}
 
 /* divs */
 .home {
@@ -16,13 +27,29 @@
 .profile {
   width: 100%;
   background-color: white;
+  color: navy;
+}
+
+.follower_list {
+  width: 100%;
+  background-color: white;
   position:relative;
   margin:0 auto;
   clear:left;
   height:auto;
   z-index: 0;
   text-align:center;
-  color: navy;
+}
+
+.starred_repo_list {
+  width: 100%;
+  background-color: white;
+  position:relative;
+  margin:0 auto;
+  clear:left;
+  height:auto;
+  z-index: 0;
+  text-align:center;
 }
 
 /* buttons */
@@ -44,29 +71,6 @@
 .button_login:hover {background-color: #33cc33}
 
 .button_login:active {
-  background-color: #33cc33;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
-}
-
-.button_logout {
-  display: inline-block;
-  padding: 15px 25px;
-  font-size: 24px;
-  cursor: pointer;
-  text-align: center;
-  text-decoration: none;
-  outline: none;
-  color: navy;
-  background-color: lime;
-  border: none;
-  border-radius: 15px;
-  box-shadow: 0 9px #999;
-}
-
-.button_logout:hover {background-color: #33cc33}
-
-.button_logout:active {
   background-color: #33cc33;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
@@ -104,4 +108,32 @@
   display: block;
     margin: auto;
 }
+
+.nav_logo {
+  width: 46px;
+  height: 46px;
+}
 /* nav */
+.nav_ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: navy;
+}
+
+.nav_li {
+    float: left;
+}
+
+.nav_li a {
+    display: block;
+    color: lime;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.nav_li a:hover {
+    background-color: #00004d;
+}
