@@ -1,0 +1,11 @@
+<%= render partial: 'layouts/navbar' %>
+
+<div class="starred_repo_list">
+  <h1>Starred Repositories</h1>
+
+  <% @starred.each do |star| %>
+    <h3>Repository Name: <%= star.name %></h3>
+    <h3>Repository Language: <%= star.language %></h3>
+    <br><br>
+  <% end %>
+</div>

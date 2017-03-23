@@ -1,13 +1,9 @@
-class Starred
-  # attr_reader :name, :owner
-  #
-  # def initialize(attributes={})
-  #   @name = attributes[:name]
-  #   @owner = attributes[:owner][:login]
-  # end
-  #
+class Starred < OpenStruct
+
   def self.find_starred_repos(user)
-    GithubService.new(user).starred_repos
+    GithubService.new(user).starred_repos.map do |starred_repo|
+      Starred.new(starred_repo)
+    end
   end
 
   def self.count(user)

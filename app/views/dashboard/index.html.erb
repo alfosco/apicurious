@@ -1,8 +1,8 @@
+<%= render partial: 'layouts/navbar' %>
+
 <div class="profile">
   <h1><%= @user_profile[:name] %>'s Profile</h1>
   <%= image_tag @user_profile[:avatar_url], class: "thumbnail" %>
   <h2>Username: <%= @user_profile[:login] %> </h2>
   <h2>Email: <%= @user_profile[:email] %> </h2>
-  <h2> Starred Repositories: <%= @starred %> </h2>
-  <%= link_to "Logout", logout_path, class: "button_logout" %>
 </div>

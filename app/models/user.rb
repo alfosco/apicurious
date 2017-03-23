@@ -9,7 +9,7 @@ class User < ApplicationRecord
     user
   end
 
-  def self.user_info(user)
+  def self.find_user_info(user)
     GithubService.new(user).user_info
   end
 end

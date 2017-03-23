@@ -1,10 +1,11 @@
-class DashboardController < ApplicationController
+class StarsController < ApplicationController
   before_action :authorize!
 
   def index
     user = User.find(session[:user_id])
-    @user_profile = User.find_user_info(user)
+    @starred = Starred.find_starred_repos(user)
     @star_count = Starred.count(user)
     @follower_count = Follower.count(user)
   end
+
 end

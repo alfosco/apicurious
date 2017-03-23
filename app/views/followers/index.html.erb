@@ -1,0 +1,12 @@
+<%= render partial: 'layouts/navbar' %>
+
+<div class="follower_list">
+  <h1>Followers</h1>
+
+  <% @followers.each do |follower| %>
+    <h3><%= follower.login %></h3>
+    <br>
+    <%= image_tag follower.avatar_url, class: "thumbnail" %>
+    <br><br>
+  <% end %>
+</div>
