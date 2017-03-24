@@ -1,24 +1,7 @@
-# README
+# APIcurious
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This project focuses on consuming and working with data from public APIs. I selected Github's API and re-constructed a simplified version of the website’s existing UI for a logged-in user using their own API.
 
-Things you may want to cover:
+The markdown for this project can be found [here](http://backend.turing.io/module3/projects/apicurious)
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+APIcurious can be found [here](https://pure-island-57732.herokuapp.com/) live on Heroku.
