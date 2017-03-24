@@ -11,4 +11,5 @@ Rails.application.routes.draw do
   get '/following', to: 'followings#index'
   get '/organizations', to: 'organizations#index'
   get '/repositories', to: 'repositories#index'
+  get '/feed', to: 'received_events#index'
 end

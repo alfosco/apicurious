@@ -13,10 +13,11 @@
   </div>
 
   <div class="column three">
-    <h2 class="event_feed">Recent Activity</h2>
+    <h2>Recent Activity</h2>
     <% @events[0..2].each do |event| %>
+    <hr>
       <h3><%= event.type %></h3>
-      <h3><%= link_to event.repo[:name], event.repo[:url] %></h3>
+      <h3><%= event.repo[:name] %></h3>
     <% end %>
   </div>
 
