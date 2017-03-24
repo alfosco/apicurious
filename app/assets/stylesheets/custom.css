@@ -26,10 +26,6 @@ hr {
   background-color: lime;
 }
 
-.event_feed {
-  text-decoration: underline;
-}
-
 /* divs */
 * {
     box-sizing: border-box;

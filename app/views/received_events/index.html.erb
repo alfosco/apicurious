@@ -1,0 +1,14 @@
+<%= render partial: 'layouts/navbar' %>
+
+<div class="list">
+  <h1>Feed</h1>
+  <hr>
+
+  <% @received_events[0..9].each do |event| %>
+    <h3><%= event.type %></h3>
+    <h3><%= event.actor[:login] %></h3>
+    <h3><%= event.repo[:name] %></h3>
+    <h3><%= event.created_at %></h3>
+    <hr>
+  <% end %>
+</div>
