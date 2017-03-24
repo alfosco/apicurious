@@ -3,6 +3,11 @@ h1 {
   color: navy;
 }
 
+.h1_profile {
+   color: navy;
+   text-align: center;
+}
+
 h2 {
   color: navy;
 }
@@ -21,7 +26,44 @@ hr {
   background-color: lime;
 }
 
+.event_feed {
+  text-decoration: underline;
+}
+
 /* divs */
+* {
+    box-sizing: border-box;
+  }
+
+.column {
+    float: left;
+    padding: 15px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.one {
+    width: 10%;
+}
+
+.two {
+    width: 30%;
+}
+.three {
+    width: 50%;
+    border-style: solid;
+    border-width: medium;
+    border-color: lime;
+    text-align: center;
+}
+
+.four {
+    width: 10%;
+}
+
 .home {
   width: 100%;
   background-color: white;
@@ -31,12 +73,6 @@ hr {
   height:auto;
   z-index: 0;
   text-align:center;
-  color: navy;
-}
-
-.profile {
-  width: 100%;
-  background-color: white;
   color: navy;
 }
 

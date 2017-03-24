@@ -1,8 +1,25 @@
 <%= render partial: 'layouts/navbar' %>
 
-<div class="profile">
-  <h1><%= @user_profile[:name] %>'s Profile</h1>
-  <%= image_tag @user_profile[:avatar_url], class: "thumbnail" %>
-  <h2>Username: <%= @user_profile[:login] %> </h2>
-  <h2>Email: <%= @user_profile[:email] %> </h2>
+<h1 class="h1_profile"><%= @user_profile[:name] %>'s Profile</h1>
+
+<div class="clearfix">
+  <div class="column 1">
+  </div>
+
+  <div class="column two">
+    <%= image_tag @user_profile[:avatar_url], class: "thumbnail" %>
+    <h3>Username: <%= @user_profile[:login] %> </h3>
+    <h3>Email: <%= @user_profile[:email] %> </h3>
+  </div>
+
+  <div class="column three">
+    <h2 class="event_feed">Recent Activity</h2>
+    <% @events[0..2].each do |event| %>
+      <h3><%= event.type %></h3>
+      <h3><%= link_to event.repo[:name], event.repo[:url] %></h3>
+    <% end %>
+  </div>
+
+  <div class="column 4">
+  </div>
 </div>
