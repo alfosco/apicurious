@@ -1,7 +1,7 @@
 <div class="home">
   <h1>Welcome to Github</h1>
   <h3>...but not the real Github</h3>
-  <%= link_to "Login", "https://github.com/login/oauth/authorize?client_id=e97ab6e2939b796015d3&scope=repo", class: "button_login" %>
+  <%= link_to "Login", "https://github.com/login/oauth/authorize?client_id=#{Figaro.env.client_id}&scope=repo", class: "button_login" %>
 </div>
 <br>
 <img class="logo" src="https://assets-cdn.github.com/images/modules/logos_page/Octocat.png" >
